@@ -5,7 +5,7 @@ MPIプログラムからMPIプログラムをstd::systemで呼び出すサンプ
 
 # 何が問題か
 
-MPI_Init/Finalizeを呼び出すコードから、さらにMPI_Init/Finalizeを呼び出すコードをstd::system関数で子プロセスとして呼び出すと一般に正しく実行できない。おそらくMPI_Finalizeが問題を起こしている。
+`MPI_Init`/`MPI_Finalize`を呼び出すコードから、さらに`MPI_Init`/`MPI_Finalize`を呼び出すコードを`std::system`関数で子プロセスとして呼び出すと一般に正しく実行できない。おそらく`MPI_Finalize`が問題を起こしている。
 
 # サンプルコード
 
