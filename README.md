@@ -1,6 +1,7 @@
 MPIプログラムからMPIプログラムをstd::systemで呼び出すサンプル
 ===
 
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 
 # 何が問題か
 
@@ -44,6 +45,8 @@ $ mpiexec -np 2 ./a.out
 Hello World
 Hello World # ← ここでプログラム実行が止まり、正常終了しない
 ```
+
+上記の状態でCtrl+Cを押すとSIGSEGVで落ちる。
 
 Intel MPIの場合は以下のようなエラーが出る。
 
